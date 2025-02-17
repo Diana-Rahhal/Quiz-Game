@@ -1,0 +1,106 @@
+body{
+    width:90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    color:#1E3A8A;
+    
+}
+
+
+.main{
+    width:75%;
+    height: 75%;
+    background-color: #E0E7FF;
+
+    border:solid transparent 5px;
+    border-radius: 5px;
+    display:grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gameName{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.question{
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+.choices{
+    display: grid;
+    grid-template-rows:repeat(4 , 40px);
+    gap:5px;
+}
+
+.choices div{
+    font-size: medium;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B82F6;
+    color: #FFFFFF;
+    border:solid transparent 1px;
+    border-radius: 30px;
+
+}
+
+.choices div:hover{
+    background-color: #2563EB;
+    border:none;
+    border:solid  3px;
+    border-radius: 30px;
+    font-size: larger;
+}
+.choices .chosen{
+    background-color: #1E40AF;
+    border:none;
+    border:solid  3px;
+    border-radius: 30px;
+    font-size: larger;
+
+}
+
+
+.footer {
+    width:75%;
+    height: 10%;
+
+    border:solid transparent 5px;
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: repeat(3 , 30%);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #1E3A8A; 
+}
+
+.footer button {
+    background-color: #3B82F6; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.footer button:hover {
+    background-color: #2563EB; 
+}
+
+.footer button:active {
+    background-color: #1E40AF; 
+    transform: scale(0.95);
+}
+
